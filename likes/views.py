@@ -4,6 +4,7 @@ from rest_framework import status
 from rest_framework import permissions
 from .models import Like
 from .serializers import PostLikeSerializer
+from django.core.mail import send_mail
 
 
 class PostLikeApiView(APIView):
@@ -40,6 +41,14 @@ class PostLikeApiView(APIView):
         serializer = PostLikeSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
+            send_mail(
+                'Your Post has been new like',
+                'Your post has been like by user',
+                'donot-reply@albanero.io',
+                [request.user.email],
+                fail_silently=False,
+            )
+
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
