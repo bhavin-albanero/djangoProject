@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from posts import urls as post_urls
 
 api_urlpatterns = [
     path('accounts/', include('rest_registration.api.urls')),
@@ -24,4 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # add apis urls
     path('api/v1/', include(api_urlpatterns)),
+    path('api/v1/', include(post_urls)),
 ]

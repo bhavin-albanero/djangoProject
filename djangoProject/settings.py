@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_registration',
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_REGISTRATION = {
-    'REGISTER_VERIFICATION_ENABLED': False,
+    'REGISTER_VERIFICATION_ENABLED': True,
     'REGISTER_EMAIL_VERIFICATION_ENABLED': True,
     'RESET_PASSWORD_VERIFICATION_ENABLED': False,
 
@@ -130,3 +131,5 @@ REST_REGISTRATION = {
 
     'VERIFICATION_FROM_EMAIL': 'no-reply@albanero.io',
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
