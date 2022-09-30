@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbc5c497-a600-41e7-b0b3-4ea1aa38e651" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/likes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/migrations/0002_alter_like_post.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/likes/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30287540-e95e-48dc-8fcb-dd0c7266b948.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30287540-e95e-48dc-8fcb-dd0c7266b948.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/posts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/posts/views.py" afterDir="false" />
     </list>
@@ -27,19 +41,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/bhavin/PycharmProjects/djangoProject/likes"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/likes" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangoProject" />
@@ -105,7 +125,7 @@
       <workItem from="1664454052370" duration="38000" />
       <workItem from="1664454097796" duration="7501000" />
       <workItem from="1664513856980" duration="1334000" />
-      <workItem from="1664515499133" duration="5725000" />
+      <workItem from="1664515499133" duration="10939000" />
     </task>
     <servers />
   </component>
