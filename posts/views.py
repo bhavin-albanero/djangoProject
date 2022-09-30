@@ -17,7 +17,7 @@ class PostListApiView(APIView):
         """
         List all the post items for given requested user
         """
-        todos = Post.objects.filter(user=request.user.id)
+        todos = Post.objects.filter()
         serializer = PostSerializer(todos, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
