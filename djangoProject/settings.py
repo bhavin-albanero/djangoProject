@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+import mongoengine
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -77,8 +79,12 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'my_database',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://root:LPIIMhSFF5VFrdhR@cluster0.qt0rmwd.mongodb.net/?retryWrites=true&w=majority'
+        }
     }
 }
 
