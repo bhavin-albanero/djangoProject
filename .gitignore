@@ -1,4 +1,1 @@
 .idea
-__pycache__/
-djangoProject/__pycache__/
-db.sqlite3
